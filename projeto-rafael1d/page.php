@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<form style="padding: 20px; border: 1px solid #ccc; width: 250px; margin: 50px auto; font-family: Arial, sans-serif;">
+<form style="padding: 20px; border: 1px solid #c70000; width: 250px; margin: 50px auto; font-family: Arial, sans-serif;">
   <input 
     type="text" 
     name="nome" 
@@ -24,7 +24,7 @@
   <input 
     type="submit" 
     value="Enviar" 
-    style="padding: 8px; width: 100%; background-color: #4a90e2; border: none; color: white; border-radius: 4px; cursor: pointer;"
+    style="padding: 8px; width: 100%; background-color: #c70000; border: none; color: white; border-radius: 4px; cursor: pointer;"
   >
 </form>
 
