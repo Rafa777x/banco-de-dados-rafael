@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Form Básico</title>
+  <title>Formulario</title>
 </head>
 <body>
 
@@ -14,6 +14,13 @@
     placeholder="Nome" 
     style="padding: 8px; width: 100%; margin-bottom: 10px; box-sizing: border-box; border: 1px solid #999; border-radius: 4px;"
   >
+  <input 
+  type="password"
+  name="senha"
+  placeholder="Senha"
+  style="padding: 8px; width: 100%; margin-bottom: 10px; box-sizing: border-box; border: 1px solid #999; border-radius: 4px;"
+  >
+
   <input 
     type="submit" 
     value="Enviar" 
