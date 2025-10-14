@@ -6,9 +6,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
-    background: linear-gradient(135deg, #7b0404 0%, #000000 100%); /* Modern gradient instead of repeating image */
+    background: linear-gradient(135deg, #050505 0%, #00ff6e 100%); /* Modern gradient instead of repeating image */
     color: #333;
     line-height: 1.6;
     min-height: 100vh;
@@ -39,7 +38,7 @@ body {
 #header {
     width: 100%;
     height: 120px; /* Slightly taller for modern feel */
-    background: linear-gradient(135deg, #000000 0%, #800808 100%); /* Modern gradient header */
+    background: linear-gradient(135deg, #000000 0%, #000000 100%); /* Modern gradient header */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,7 +53,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('images/header.jpg') center/cover; /* Keep original image as overlay if desired */
+    background: url('images/coringa.jpeg') center/cover; /* Keep original image as overlay if desired */
     opacity: 0.3; /* Subtle overlay */
     z-index: 0;
 }
@@ -96,7 +95,7 @@ body {
     width: 100%;
     margin-bottom: 20px;
     border-bottom: 2px solid #e0e0e0;
-    background: linear-gradient(135deg, #000000 0%, #f5576c 100%); /* Vibrant modern gradient */
+    background: linear-gradient(135deg, #000000 0%, #000000 100%); /* Vibrant modern gradient */
     padding: 20px;
     list-style-type: none;
     border-radius: 0 0 15px 15px; /* Rounded bottom */
@@ -120,7 +119,7 @@ body {
 #formulario_mural {
     text-align: center;
     width: 100%;
-    background: linear-gradient(135deg, #000000 0%, #590606 100%); /* Soft pastel gradient */
+    background: linear-gradient(135deg, #000000 0%, #000000 100%); /* Soft pastel gradient */
     padding: 25px;
     margin-bottom: 20px;
 }
