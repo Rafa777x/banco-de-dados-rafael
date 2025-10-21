@@ -6,9 +6,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Body: Deep Contrast with Neon Accent */
 body {
-    background: linear-gradient(135deg, #050505 0%, #00ff6e 100%); /* Modern gradient instead of repeating image */
-    color: #333;
+    /* Use a deeper, more intentional dark background with a neon-like accent */
+    background: linear-gradient(135deg, #0d1a26 0%, #00ff6e 100%); /* Deep blue-black to vibrant green */
+    color: #ecf0f1; /* Light text for the dark body background */
     line-height: 1.6;
     min-height: 100vh;
     display: flex;
@@ -17,28 +20,29 @@ body {
     padding: 20px;
 }
 
-/* Main Container */
+/* Main Container: Floating Card Effect with Subtle Glow */
 #main {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.95); /* Semi-transparent white for a modern glassmorphism effect */
+    background: #ffffff; /* Solid white for maximum contrast on dark background */
     border-radius: 20px; /* Rounded corners */
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    /* Stronger, more defined shadow with a subtle neon green glow */
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 255, 110, 0.3);
     overflow: hidden;
 }
 
 /* General Wrapper */
 #geral {
     width: 100%;
-    background: #FFFFFF;
+    background: transparent; /* Remove the white background from the inner wrapper */
 }
 
-/* Header */
+/* Header: Dark and Tech-Focused */
 #header {
     width: 100%;
-    height: 120px; /* Slightly taller for modern feel */
-    background: linear-gradient(135deg, #000000 0%, #000000 100%); /* Modern gradient header */
+    height: 140px; /* Slightly taller for visual weight */
+    background: #0d1a26; /* Match the deep background color */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,7 +58,7 @@ body {
     right: 0;
     bottom: 0;
     background: url('images/coringa.jpeg') center/cover; /* Keep original image as overlay if desired */
-    opacity: 0.3; /* Subtle overlay */
+    opacity: 0.15; /* Subtle overlay */
     z-index: 0;
 }
 
@@ -66,11 +70,11 @@ body {
 }
 
 #header h1 {
-    font-size: 24px; /* Larger, more modern */
+    font-size: 24px;
     font-weight: 700;
     color: #fff;
     margin: 0;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #header p {
@@ -83,27 +87,29 @@ body {
     font-weight: 600;
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 #header a:hover {
-    color: #ffd700; /* Gold accent on hover */
+    color: #00ff6e; /* Neon green accent on hover */
+    text-shadow: 0 0 5px #00ff6e; /* Add a subtle neon text glow */
 }
 
-/* Messages Section */
+/* Messages Section: Clean on White */
 .recados {
     width: 100%;
     margin-bottom: 20px;
     border-bottom: 2px solid #e0e0e0;
-    background: linear-gradient(135deg, #000000 0%, #000000 100%); /* Vibrant modern gradient */
+    background: #ffffff; /* Use white to keep content legible */
     padding: 20px;
     list-style-type: none;
-    border-radius: 0 0 15px 15px; /* Rounded bottom */
+    border-radius: 0 0 15px 15px;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .recados li {
-    background: rgba(255, 255, 255, 0.8);
+    background: #f8f8f8; /* Light gray background for list item cards */
+    color: #333; /* Dark text for legibility */
     margin-bottom: 10px;
     padding: 15px;
     border-radius: 10px;
@@ -115,11 +121,11 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Form Section */
+/* Form Section: Contrast Section */
 #formulario_mural {
     text-align: center;
     width: 100%;
-    background: linear-gradient(135deg, #000000 0%, #000000 100%); /* Soft pastel gradient */
+    background: #f4f7f6; /* Very light gray to distinguish from the main white */
     padding: 25px;
     margin-bottom: 20px;
 }
@@ -127,59 +133,61 @@ body {
 #mural input,
 #mural textarea {
     width: 100%;
-    max-width: 300px; /* Responsive width */
+    max-width: 300px;
     padding: 12px;
     margin: 10px 0;
     border: 2px solid #ddd;
-    border-radius: 8px; /* Rounded inputs */
+    border-radius: 8px;
     font-size: 14px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     background: rgba(255, 255, 255, 0.9);
+    color: #333; /* Ensure input text is dark */
 }
 
+/* Input Focus Glow: Neon Green Accent */
 #mural input:focus,
 #mural textarea:focus {
     outline: none;
-    border-color: #4facfe;
-    box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.1);
+    border-color: #00ff6e;
+    box-shadow: 0 0 0 3px rgba(0, 255, 110, 0.3);
 }
 
 #mural textarea {
     height: 100px;
-    resize: vertical; /* Allow vertical resize only */
+    resize: vertical;
 }
 
-/* Button Styles */
+/* Button Styles: Tech Gradient with Neon Shadow */
 .btn {
     padding: 12px 24px;
     width: auto;
     min-width: 120px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%); /* A darker, tech-focused blue-green */
     color: #fff;
-    border: none;
-    border-radius: 25px; /* Pill-shaped for modernity */
+    border: 1px solid #00ff6e; /* Subtle border glow */
+    border-radius: 25px;
     cursor: pointer;
     font-weight: 600;
     font-size: 14px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 255, 110, 0.5); /* Stronger neon shadow */
 }
 
 .btn:hover {
-    background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    background: linear-gradient(135deg, #00ff6e 0%, #00e060 100%); /* Invert on hover to full neon */
+    transform: translateY(-3px); /* Stronger lift effect */
+    box-shadow: 0 8px 25px rgba(0, 255, 110, 0.8);
 }
 
 .btn:active {
     transform: translateY(0);
 }
 
-/* Footer */
+/* Footer: Dark and Understated */
 #footer {
     width: 100%;
-    height: 50px; /* Taller for better spacing */
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); /* Dark modern gradient */
+    height: 50px;
+    background: linear-gradient(135deg, #1d2b3a 0%, #0d1a26 100%); /* Deep dark gradient */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -194,13 +202,13 @@ body {
 }
 
 #footer a {
-    color: #3498db;
+    color: #00ff6e; /* Neon link color */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 #footer a:hover {
-    color: #5dade2;
+    color: #39ff7d;
 }
 
 /* Form Labels and Errors (Updated for Modernity) */
@@ -208,7 +216,7 @@ label {
     display: block;
     margin-top: 15px;
     font-weight: 600;
-    color: #555;
+    color: #555; /* Dark color for visibility on light background */
 }
 
 label.error {
@@ -270,7 +278,7 @@ em {
     }
 }
 
-/* Additional Modern Touches */
+/* Additional Modern Touches (Animations) */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
