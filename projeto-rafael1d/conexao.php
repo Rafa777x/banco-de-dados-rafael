@@ -15,4 +15,9 @@ if (!$conexao) {
 
 // SENSITIVE CASE suportar acentos e Ç
 mysqli_set_charset($conexao, "utf8");
+
+$cloud_name = "dgjvkardk";  // exemplo: "meucloud123"
+$api_key    = "431931954895513";     // exemplo: "123456789012345"
+$api_secret = "_FSVkWjXW4W2OmvWuG_riPzg-Vk";  // exemplo: "abcdeFGHijkLMNopqrstu"
+
 ?>
